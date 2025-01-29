@@ -150,12 +150,6 @@ public class ListManipulator implements IListManipulator {
         head.previous.next = node;
         head.previous = node;
         head = node;
-
-        ListNode cur = head;
-        while(cur!=null){
-            cur = cur.next;
-            if(cur == head) break;
-        }
         return head;
     }
 
